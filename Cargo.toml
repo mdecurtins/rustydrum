@@ -6,3 +6,6 @@ description = "A Rust library for working with music data in Humdrum"
 repository = "https://github.com/mdecurtins/rustydrum"
 
 [dependencies]
+
+[dev-dependencies]
+husky-rs = "0.1.3"
