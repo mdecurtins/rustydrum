@@ -1,0 +1,8 @@
+[package]
+name = "rustydrum"
+version = "0.1.0"
+edition = "2024"
+description = "A Rust library for working with music data in Humdrum"
+repository = "https://github.com/mdecurtins/rustydrum"
+
+[dependencies]
