@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# This file was copied from: https://github.com/abroadwin/dicey/blob/main/.husky/hooks/pre-push
+
+echo "Verifying formatting"
+cargo fmt --all -- --check --color always
+
+echo "Running clippy checks"
+cargo clippy -- -D warnings
+
+echo "Running tests"
+cargo test
