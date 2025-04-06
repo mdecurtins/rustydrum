@@ -1,0 +1,21 @@
+name: Rust
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  lint:
+    name: Format and Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clippy
+        run: cargo clippy -- -D warnings
+      - name: Validate Formatting
+        run: cargo fmt --check
